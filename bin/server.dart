@@ -20,7 +20,7 @@ void main(List<String> args) async {
   final server = await serve(handler, ip, port);
 
   withHotreload(() async {
-    print('Server listening on port http://localhost:${server.port}');
+    print('Server listening on http://localhost:${server.port}');
     return server;
   });
 
